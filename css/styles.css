@@ -49,6 +49,13 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 p,
 h1,
 h2,
@@ -60,12 +67,11 @@ ul {
 /* header */
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid --footer-color-text;
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
 
   background-color: var(--white-color);
 }
@@ -121,6 +127,7 @@ ul {
 /* Contacts */
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 .contacts-link {
   display: block;
@@ -193,6 +200,8 @@ ul {
 }
 
 .features-title {
+  margin-bottom: 8px;
+
   color: var(--title-color);
   font-weight: 500;
   font-size: 20px;
@@ -244,10 +253,7 @@ ul {
 }
 
 .card-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -377,4 +383,5 @@ ul {
 
 .list-of-projects-item {
   background: #ffffff;
+  width: calc((100% - 48px) / 3);
 }
